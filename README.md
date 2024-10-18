@@ -2,6 +2,13 @@
 
 Keycloak is an easy way to secure your app with OAuth/SSO. Here's an easy way to deploy it.
 
+## Steps
+
+1. Copy the .env.example to .env at the root
+2. Specify AWS_ACCOUNT and AWS_REGION if different than the defaults in your aws cli, or delete them to use the defaults
+3. Modify the Keycloak specific environment variables
+4. Run `cdk synth && cdk deploy`
+
 ## Useful commands
 
 - `npm run build` compile typescript to js
