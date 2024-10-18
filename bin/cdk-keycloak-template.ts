@@ -12,7 +12,6 @@ const {
 } = process.env;
 
 const app = new cdk.App();
-console.log({ account: AWS_ACCOUNT, region: AWS_REGION });
 new CdkKeycloakTemplateStack(app, "CdkKeycloakTemplateStack", {
   env: { account: AWS_ACCOUNT, region: AWS_REGION },
 });
